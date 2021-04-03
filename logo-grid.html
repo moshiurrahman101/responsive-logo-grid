@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Grid</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+    <!-- main container  -->
+    <div id="root">
+        <h2>Our Clients</h2>
+        <div class="logo-grid-container" id="imgContainer">
+        
+        </div>
+    </div>
+
+
+
+    <!-- javascript -->
+    <script>
+        let imgContainer = document.getElementById("imgContainer");
+        let dir = 'images/brand/'
+        var img = "";
+        for (let imgName = 1; imgName < 13; imgName++) {
+            img = img+"<img src='"+dir+imgName+".jpg"+"' alt='Brand logo' />";   
+                
+        }
+        imgContainer.innerHTML = img;  
+        
+    </script>
+</body>
+</html>

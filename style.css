@@ -1,0 +1,13 @@
+#root{
+    max-width: 920px;
+    margin: 0 auto;
+}
+.logo-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center;
+}
+.logo-grid-container img{
+    width: 100%;
+    align-self: center;
+}
